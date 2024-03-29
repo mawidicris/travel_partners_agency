@@ -1,0 +1,369 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    position: relative; 
+    background-color:#fafafa;
+}
+.BG {
+    background-image: url('Grecia.jpg');
+}
+.BJ {
+    background-image: url('Japon.jpg');
+}
+.BI {
+    background-image: url('Italia.jpg');
+}
+.BE {
+    background-image: url('Egipto.jpg');
+}
+.BP {
+    background-image: url('Peru.jpg');
+}
+.BA {
+    background-image: url('Argentina.jpg');
+}
+header {
+    
+    height: 80px;
+    background-position: center;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+        position: fixed;
+
+        top: 0;
+     
+        left: 0;
+     
+        width: 100%;
+
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -160px; /* Empieza oculto */
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    transition: left 0.3s ease; /* Transición suave para el movimiento */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#sidebar:hover {
+    left: 0; /* Aparece al pasar el ratón sobre él */
+}
+
+
+.Card {
+    background-color: rgb(231, 222, 222);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+.Card h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -50px; 
+    padding: 50px;
+}
+
+.Card h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Card p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sitios ul {
+    list-style: none; /* Quita los estilos de lista */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+}
+
+/* Estilo para cada elemento de la lista */
+#sitios li {
+    width: 48%; /* Ancho del elemento */
+    background-color: #f2f2f2; /* Color de fondo para diferenciar los elementos */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+    border-radius: 10px; /* Bordes redondeados para suavizar la apariencia */
+}
+
+/* Estilo para el texto dentro del elemento */
+#sitios li > p {
+    text-align: center; /* Centra el texto */
+    color: white;
+   
+}
+
+/* Estilo para las imágenes dentro del elemento */
+#sitios li > img {
+    display: block; /* Asegura que la imagen sea un bloque para centrarla */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 80%; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.Card_it {
+    background-color: rgb(231, 222, 222);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Centra la tarjeta horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo de la tarjeta */
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.Card_it ul {
+    list-style: none; 
+    justify-content: center;
+    text-align: center; 
+}
+
+#itinerario h2{
+    text-align: center;
+}
+
+.Card_it ul li {
+    padding: 10px; /* Añade relleno para separar los elementos */
+    margin: 5px; /* Añade margen para separar los elementos */
+}
+#itinerario li {
+    width: 48%; /* Ancho del elemento */
+    background-color: #f2f2f2; /* Color de fondo para diferenciar los elementos */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+    border-radius: 10px; /* Bordes redondeados para suavizar la apariencia */
+    
+}
+
+
+.Card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#sitios ul,figure {
+    margin:0;
+    padding: 0;
+
+}
+#sitios img {
+    width: 100%;
+
+}
+#sitios ul { 
+    list-style: none;
+    display: flex;
+}
+
+#sitios ul li { 
+    width: 48%;
+}
+
+#sitios ul li figure{
+    position: relative;
+}
+#sitios ul li figcaption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+#sitios ul li figure:hover figcaption{
+    display: block;
+
+}
+#sitios ul li figure p{
+    color: white;
+    text-align: center;
+}
+.Card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
+aside {
+    position: fixed; /* Para que el aside sea fijo en la pantalla */
+    top: 0; /* Lo colocamos en la parte superior */
+    left: 0; /* Lo colocamos en el borde izquierdo */
+    height: 100%; /* Lo hacemos ocupar toda la altura de la pantalla */
+    width: 75px; /* Ancho del aside */
+    background-color: #333; /* Color de fondo */
+    z-index: 1000;
+}
+aside nav {
+    padding-top: 20px; /* Espacio superior */
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    padding: 10px 0;
+}
+
+aside ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+aside ul li a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+.detalle {
+    display: none; /* Inicialmente oculto */
+}
+#itinerario-list li h3 {
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar el ratón */
+}
+#itinerario-list li:hover .detalle {
+    display: block; /* Muestra los detalles al pasar el ratón sobre el elemento */
+}
+
+    #itinerario ul {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+  #costos {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    align-items:center;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #beb8b6;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: -10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin: 0 auto;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button2 {
+    display: flex;
+  }
+
+    
+.Especial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 100px;
+}
+
+.Especial h3 {
+    
+    margin-top: 0;
+    color: #fff; /* Texto blanco */
+    background-color: #007bff; /* Fondo azul */
+    padding: 10px; /* Espaciado interno */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.Especial p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+ }
+ .video-itemD{
+  
+  margin-left: 100px;
+}
+.video-itemC{
+  
+    margin-left: 100px;
+  }
+  .video-itemI{
+  
+    margin-left: 100px;
+  }
+  
+  
+
+  

@@ -3,93 +3,118 @@
 <head>
     <title>Italia</title>
     <link rel="icon" href="avion.png" type="image/png">
+    <link rel="stylesheet" href="Styless2.css">
 </head>
 <body>
-    <header style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <header class="BI" style="background-color: #f2f2f2; padding: 20px; text-align: center;">
         <h1>Italia</h1>
-        <img src="Italia.jpg" alt="Italia" style="max-width: 100%; height: auto;">
+       
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sitios">Sitios de interés</a></li>
-            <li><a href="#itinerario">Itinerario</a></li>
-            <li><a href="#costos">Costos de viaje</a></li>
-        </ul>
-    </nav>
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sitios">Sitios de interés</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#costos">Costos de viaje</a></li>
+            </ul>
+        </nav>
+    </aside>
     <main>
         <section id="sitios">
-            <article>
-                <h2>Sitios de interés</h2>
+            <div class="Card">
+           <h2>Sitios de interés</h2>
                 <p>¡Bienvenido a Italia, la tierra de la pasión, la historia y la belleza eterna! Sumérgete en la rica 
                     cultura italiana mientras exploras ciudades impregnadas de historia, disfrutas de la deliciosa cocina local y te 
                     maravillas con los impresionantes paisajes. Desde las antiguas ruinas de Roma hasta las majestuosas colinas de la Toscana 
                     y las serenas aguas de Venecia, Italia ofrece una experiencia inolvidable para todos los viajeros. ¡Aquí, puedes ser un soñador
                     y hasta formar tu propia banda de Gangstars!</p>
-            </article>
-            <article>
-                <h3>Coliseo Romano, Roma</h3>
+          <ul>
+            <li>
+                <figure><img src="Italia.jpg"  width="150">
+                <figcaption>
+                <p><b>Coliseo Romano, Roma</p></b>
                 <p>Sumérgete en la grandeza del pasado romano mientras exploras el Coliseo, un antiguo anfiteatro donde tuvieron 
                     lugar épicas batallas de gladiadores. Imagina la emoción y el drama de la batalla final de la Parte 5 de Jojo que 
                     se desarrolla en este icónico lugar, mientras admiras su impresionante arquitectura y escuchas sus historias fascinantes.</p>
-                <img src="Italia.jpg"  width="150">
-            </article>
-            <article>
-                <h3>Museos Vaticanos, Ciudad del Vaticano</h3>
+                </figcaption>
+                </figure>
+                </li>
+            <li>
+                <figure><img src="vaticano.jpg"  width="150">
+                    <figcaption>
+                <p><b>Museos Vaticanos, Ciudad del Vaticano</p></b>
                 <p>Adéntrate en un mundo de arte y esplendor en los Museos Vaticanos, donde encontrarás una vasta colección de obras
                     maestras que abarcan siglos de historia y cultura. Desde los frescos de la Capilla Sixtina hasta las esculturas 
                     clásicas, cada rincón de este lugar te transportará a un reino de belleza y creatividad.</p>
-                <img src="vaticano.jpg"  width="150">
-            </article>
-            <article>
-                <h3>Galería de la Academia, Florencia</h3>
+                
+            </figure>
+        </figcaption>
+                </li>
+            <li>
+                <figure><img src="foto_accademia.jpg"  width="150">
+                    <figcaption>
+                <p><b>Galería de la Academia, Florencia</p></b>
                 <p>Contempla la magnificencia de la estatua de David de Miguel Ángel en la Galería de la Academia de Florencia. 
                     Esta obra maestra del Renacimiento italiano te dejará sin aliento mientras te sumerges en la habilidad y 
                     la pasión del genio renacentista.</p>
-                <img src="foto_accademia.jpg"  width="150">
-            </article>
+                </figcaption>
+            </figure>
+                </li>
+                
+        </ul>
+        </div>
         </section>
 
         <section id="itinerario">
-            <article>
-                <h2>Itinerario de 5 días y 4 noches en Italia</h2>
-                <ul>
-                    <li>Día 1: Llegada a Roma</li>
-                    <p>- Llegada al aeropuerto internacional de Roma Fiumicino. <br>
+            <h2>Itinerario de 5 días y 4 noches en Italia</h2>
+            <div class="Card_it">
+            <ul id="itinerario-list">
+
+                    <li>
+                        <h3><b>Día 1: Llegada a Roma</b></h3>
+                    <p class="detalle">- Llegada al aeropuerto internacional de Roma Fiumicino. <br>
                     - Visita a la Fontana di Trevi para lanzar una moneda y hacer un deseo. <br>
                     - Cena en un restaurante tradicional romano.</p>
+                    </li>
 
-                    <li>Día 2: Explorando Roma</li>
-                    <p>- Visita al Coliseo Romano, donde podrás imaginar las épicas batallas de gladiadores que tuvieron lugar allí.<br>
+
+                    <li>
+                        <h3><b>Día 2: Explorando Roma</b></h3>
+                    <p class="detalle">- Visita al Coliseo Romano, donde podrás imaginar las épicas batallas de gladiadores que tuvieron lugar allí.<br>
                     - Recorrido por el Foro Romano y el Palatino para explorar la antigua Roma. <br>
                     - Tarde libre para explorar el Barrio Trastevere y sus encantadoras calles adoquinadas.</p>
-
-                    <li>Día 3: Excursión a Florencia</li>
-                    <p>- Viaje en tren de alta velocidad (Trenitalia) a Florencia.<br>
+                </li>
+                    <li>
+                        <h3><b>Día 3: Excursión a Florencia</b></h3>
+                    <p class="detalle">- Viaje en tren de alta velocidad (Trenitalia) a Florencia.<br>
                     - Llegada a Florencia y visita a la Galería de la Academia para ver la famosa estatua de David de Miguel Ángel. <br>
                     - Visita al Duomo de Florencia y el Baptisterio.</p>
-
-                    <li>Día 4: Descubriendo el Vaticano</li>
-                    <p>- Visita a los Museos Vaticanos para admirar la increíble colección de arte y los frescos de la Capilla Sixtina.<br>
+                </li>
+                    <li>
+                        <h3><b>Día 4: Descubriendo el Vaticano</b></h3>
+                    <p class="detalle">- Visita a los Museos Vaticanos para admirar la increíble colección de arte y los frescos de la Capilla Sixtina.<br>
                     - Explora la Basílica de San Pedro y sube a la cúpula para disfrutar de vistas panorámicas de Roma.<br>
                     - Cena de despedida en un restaurante romántico con vistas al río Tíber.</p>
-
-                    <li>Día 5: Último día en Roma y regreso</li>
-                    <p>- Visita a la Piazza Navona y el Panteón de Agripa. <br>
+                </li>
+                    <li>
+                        <h3><b>Día 5: Último día en Roma y regreso</b></h3>
+                    <p class="detalle">- Visita a la Piazza Navona y el Panteón de Agripa. <br>
                     - Tiempo libre para disfrutar de un último café italiano y un helado.<br>
                     - Traslado al aeropuerto para tomar el vuelo de regreso a casa.</p>
+                </li>
                 </ul>
             </article>
         </section>
 
         <section id="costos">
-            <article>
+           
                 <h2>Costos de Viaje en Italia</h2>
                 <p>- <b>Traslados:</b> Los traslados pueden costar entre 20 a 50 dólares por trayecto, dependiendo del medio de transporte elegido.<br>
                 - <b>Hospedaje:</b> Los precios oscilan entre 50 a 150 dólares por noche, según la ubicación y categoría del alojamiento.<br>
                 - <b>Entradas a sitios turísticos:</b> Las entradas suelen estar entre 10 a 20 dólares por persona.<br>
                 - <b>Alimentación:</b> Se estima un gasto de 15 a 30 dólares por comida, dependiendo del lugar y el tipo de restaurante.</p>
-            </article>
+           
         </section>
     </main>
 
@@ -99,6 +124,8 @@
         </p>
     </footer>
 
-    <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+    <div class="button2">
+        <button class="button" onclick="window.location.href='index.html'"><span>Regresar al inicio</span></button>
+    </div>
 </body>
 </html>

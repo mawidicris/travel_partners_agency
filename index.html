@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Travel Partners</title>
-        <link rel="icon" href="avion.png" type="image/png">
-    </head>
-    <body>
-        <header style="background-color: #f2f2f2; padding: 20px; text-align: center;">
-            <h1>Travel Partners</h1>
-            <img src="Banner.jpeg"  style="max-width: 100%; height: auto;">
-        </header>
-        <h2>Acerca de nosotros</h2>
-        <p>En <b>Travel Partners</b>, nos apasiona hacer realidad los sueños de viaje de nuestros clientes. 
-            Somos una agencia comprometida en brindar experiencias inolvidables y personalizadas 
-            que perduren en la memoria de quienes nos eligen para sus aventuras alrededor del mundo.</p>
+<head>
+    <title>Travel Partners</title>
+    <link rel="icon" href="avion.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="Banner">
+        <h1>Travel Partners</h1>
+       
+        <nav class="barra-navegacion">
             <ul>
-                <li>Grecia</li>
-                <a href="Grecia.html">
-                    <img src="Grecia.jpg" alt="Grecia" width="150">
-                   
-                </a>
-            
-            <li>Japón</li>
-                <a href="Japon.html">
-                    <img src="Japon.jpg" alt="Japón" width="150">
-                    
-                </a>
-            
-            <li>Italia</li>
-                <a href="Italia.html">
-                    <img src="Italia.jpg" alt="Italia" width="150">
-                    
-                </a>
-           
-            <li>Egipto</li>
-                <a href="Egipto.html">
-                    <img src="Egipto.jpg" alt="Egipto" width="150">
-                    
-                </a>
-           
-            <li>Perú</li>
-                <a href="Peru.html">
-                    <img src="Peru.jpg" alt="Perú" width="150">
-                    
-                </a>
-           
-            <li>Argentina</li>
-                <a href="Argentina.html">
-                    <img src="Argentina.jpg" alt="Argentina" width="150">
-                    
-                </a>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Acerca">Acerca de nosotros</a></li>
+                <li><a href="#destinos">Nuestros destinos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        
-    </body>
+        </nav>
+    </header>
+    <section id="Acerca" class="tarjeta">
+    <div class="card">
+    <h2>Acerca de nosotros</h2>
+    <p>En <b>Travel Partners</b>, nos apasiona hacer realidad los sueños de viaje de nuestros clientes. 
+        Somos una agencia comprometida en brindar experiencias inolvidables y personalizadas 
+        que perduren en la memoria de quienes nos eligen para sus aventuras alrededor del mundo.</p>
+    </div>
+    </section>
+
+  <section id="destinos">
+    <h3>¡Conoce nuestros destinos!</h3>
+    <nav class="destinos">
+        <ul class="destinos-lista">
+            <li class="destino-grecia">
+            <p><a href="Grecia.html">Grecia</a></p>
+            </li>
+            <li class="destino-japon">
+            <p><a href="Japon.html">Japón</a></p>
+           </li>
+           <li class="destino-italia">
+            <p><a href="Italia.html">Italia</a></p>
+        </li>
+            <li class="destino-egipto">
+                <p><a href="Egipto.html ">Egipto</a></p>
+          
+        </li>
+            <li class="destino-peru">
+            <p><a href="Peru.html">Perú</a></p>
+        </li>
+            <li class="destino-argentina">
+            <p><a href="Argentina.html">Argentina</a></p>
+        </li>
+        </ul>
+    </nav>
+</section>
+
+
+    <section id="contacto"> 
     <footer>
         <p>Todos los derechos reservados. <b>Cristian Padrón®,</b> <br>
-            <b>Contacto:</b> cristian.padron@udea.edu.co
-        </p>
+            <b>Contacto:</b> cristian.padron@udea.edu.co </p>
+       
     </footer>
+    </section>
+</body>
 </html>

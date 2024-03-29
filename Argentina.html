@@ -3,82 +3,103 @@
 <head>
     <title>Argentina</title>
     <link rel="icon" href="avion.png" type="image/png">
+    <link rel="stylesheet" href="Styless2.css">
 </head>
 <body>
-    <header style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <header class="BA" style="background-color: #f2f2f2; padding: 20px; text-align: center;">
         <h1>Argentina</h1>
-        <img src="Argentina.jpg"  style="max-width: 100%; height: auto;">
+        
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sitios">Sitios de interés</a></li>
-            <li><a href="#itinerario">Itinerario</a></li>
-            <li><a href="#costos">Costos de viaje</a></li>
-        </ul>
-    </nav>
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sitios">Sitios de interés</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#costos">Costos de viaje</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <section id="inicio">
+    <section id="sitios">
+        <div class="Card">
         <h2>Sitios de interés</h2>
         <p>¡Descubre la pasión y la diversidad de Argentina con nosotros! Desde las majestuosas cataratas del Iguazú hasta los picos nevados de la Patagonia, Argentina te espera con paisajes impresionantes, una rica cultura y una deliciosa gastronomía. Sumérgete en la energía vibrante de Buenos Aires, donde el tango resuena en las calles, el fútbol es una religión y la arquitectura histórica te transporta a tiempos pasados. Embárcate en una aventura en la vasta extensión de la Pampa Argentina, donde la vida rural te conecta con la autenticidad del campo. En Argentina, cada rincón ofrece una experiencia única, desde la majestuosidad de los glaciares en el sur hasta la calidez de su gente en el norte. ¡Ven y descubre la magia de Argentina con nosotros!</p>
         <ul>
             <li>
-                <h3><b>Las Cataratas del Iguazú</b></h3>
-                <p>Ubicadas en la provincia de Misiones, en el noreste de Argentina, las Cataratas del Iguazú son una de las maravillas naturales más impresionantes del mundo. Con sus imponentes cascadas rodeadas de exuberante vegetación, este sitio es una experiencia inolvidable para los amantes de la naturaleza y la aventura.</p>
+                <figure>
+                
                 <img src="iguazu.jpg"  width="150">
+                <figcaption>
+                <p><b>Las Cataratas del Iguazú</b></p>
+                <p>Ubicadas en la provincia de Misiones, en el noreste de Argentina, las Cataratas del Iguazú son una de las maravillas naturales más impresionantes del mundo. Con sus imponentes cascadas rodeadas de exuberante vegetación, este sitio es una experiencia inolvidable para los amantes de la naturaleza y la aventura.</p>
+            </figcaption>
+            </figure>
             </li>
 
             <li>
-                <h3><b>La Ciudad de Buenos Aires</b></h3>
-                <p>La capital argentina es una metrópolis vibrante y llena de contrastes. Desde los elegantes barrios de Recoleta y Palermo hasta el histórico barrio de San Telmo y el colorido barrio de La Boca, Buenos Aires ofrece una mezcla única de cultura, arte, gastronomía y vida nocturna. Además, es el lugar perfecto para experimentar la pasión del fútbol argentino en estadios como La Bombonera y el Monumental.</p>
+                <figure>
+                  
                 <img src="BSA.jpg"  width="150">
+                <figcaption>
+                <p><b>La Ciudad de Buenos Aires</b></p>
+                <p>La capital argentina es una metrópolis vibrante y llena de contrastes. Desde los elegantes barrios de Recoleta y Palermo hasta el histórico barrio de San Telmo y el colorido barrio de La Boca, Buenos Aires ofrece una mezcla única de cultura, arte, gastronomía y vida nocturna. Además, es el lugar perfecto para experimentar la pasión del fútbol argentino en estadios como La Bombonera y el Monumental.</p>
+            </figcaption>
+            </figure>
             </li>
 
             <li>
-                <h3><b>El Glaciar Perito Moreno</b></h3>
-                <p>Situado en el Parque Nacional Los Glaciares, en la provincia de Santa Cruz, el Glaciar Perito Moreno es una maravilla natural impresionante. Con sus imponentes paredes de hielo que se elevan sobre el Lago Argentino, este glaciar ofrece vistas espectaculares y la oportunidad de presenciar desprendimientos de hielo espectaculares.</p>
+                <figure>
                 <img src="Glaciar.jpg"  width="150">
+                <figcaption>
+                <p><b>El Glaciar Perito Moreno</b></p>
+                <p>Situado en el Parque Nacional Los Glaciares, en la provincia de Santa Cruz, el Glaciar Perito Moreno es una maravilla natural impresionante. Con sus imponentes paredes de hielo que se elevan sobre el Lago Argentino, este glaciar ofrece vistas espectaculares y la oportunidad de presenciar desprendimientos de hielo espectaculares.</p>
+            </figcaption>
+            </figure>
             </li>
         </ul>
+    </div>
     </section>
 
     <section id="itinerario">
         <h2>Itinerario de 5 días y 4 noches en Argentina</h2>
-        <ul>
+        <div class="Card_it">
+        <ul id="itinerario-list">
             <li>
                 <h3><b>Día 1: Llegada a Buenos Aires</b></h3>
-                <p>- Llegada al Aeropuerto Internacional de Ezeiza.<br>
+                <p class="detalle">- Llegada al Aeropuerto Internacional de Ezeiza.<br>
                 - Visita al barrio de La Boca, conocido por sus coloridas casas y su historia cultural.<br>
                 - Cena en un restaurante local con espectáculo de tango.</p>
             </li>
 
             <li>
                 <h3><b>Día 2: Explorando Buenos Aires</b></h3>
-                <p>- Recorrido por el centro de la ciudad, incluyendo la Plaza de Mayo y la Casa Rosada.<br>
+                <p class="detalle">- Recorrido por el centro de la ciudad, incluyendo la Plaza de Mayo y la Casa Rosada.<br>
                 - Almuerzo en un tradicional café porteño.<br>
                 - Tarde libre para compras en la avenida Santa Fe.</p>
             </li>
 
             <li>
                 <h3><b>Día 3: Excursión a las Cataratas del Iguazú</b></h3>
-                <p>- Visita a las impresionantes Cataratas del Iguazú, una de las maravillas naturales del mundo.<br>
+                <p class="detalle">- Visita a las impresionantes Cataratas del Iguazú, una de las maravillas naturales del mundo.<br>
                 - Recorrido por los circuitos superior e inferior del Parque Nacional Iguazú.<br>
                 - Cena en un restaurante con vista a las cataratas.</p>
             </li>
 
             <li>
                 <h3><b>Día 4: Regreso a Buenos Aires</b></h3>
-                <p>- Vuelo de regreso a Buenos Aires.<br>
+                <p class="detalle">- Vuelo de regreso a Buenos Aires.<br>
                 - Tarde libre para actividades adicionales o compras de último minuto.<br>
                 - Cena de despedida en un restaurante especializado en cocina argentina.</p>
             </li>
 
             <li>
                 <h3><b>Día 5: Último día y regreso</b></h3>
-                <p>- Mañana libre para actividades adicionales o visitas de último momento.<br>
+                <p class="detalle">- Mañana libre para actividades adicionales o visitas de último momento.<br>
                 - Traslado al Aeropuerto Internacional de Ezeiza para tomar el vuelo de regreso.</p>
             </li>
         </ul>
+    </div>
     </section>
 
     <section id="costos">
@@ -95,6 +116,9 @@
         </p>
     </footer>
 
-    <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+    <div class="button2">
+        <button class="button" onclick="window.location.href='index.html'"><span>Regresar al inicio</span></button>
+    </div>
 </body>
+
 </html>

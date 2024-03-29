@@ -3,86 +3,105 @@
 <head>
     <title>Grecia</title>
     <link rel="icon" href="avion.png" type="image/png">
+    <link rel="stylesheet" href="Styless2.css">
 </head>
 <body>
-    <header style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <header class="BG" style="background-color: #f2f2f2; padding: 20px; text-align: center;">
         <h1>Grecia</h1>
-        <img src="Grecia.jpg"  style="max-width: 100%; height: auto;">
+        
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sitios">Sitios de interés</a></li>
-            <li><a href="#itinerario">Itinerario</a></li>
-            <li><a href="#costos">Costos de viaje</a></li>
-        </ul>
-    </nav>
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sitios">Sitios de interés</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#costos">Costos de viaje</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="content">
 
     <section id="sitios">
+        <div class="Card">
         <h2>Sitios de interés</h2>
         <p><b>¡Descubre Grecia, la cuna de la civilización!</b> Explora la fascinante historia y la belleza natural de Grecia en un viaje inolvidable, desde las majestuosas ruinas de la antigüedad hasta las impresionantes islas griegas, cada rincón ofrece una experiencia única. ¡Y quién sabe, tal vez descubras el legendario lugar donde Seiya de Pegaso obtuvo su Cloth de Pegaso! Únete a nosotros y vive tu propia aventura en la tierra de los dioses y héroes. ¡Grecia te espera!</p>
         <ul>
             <li>
-                <h3><b>Acrópolis de Atenas</b></h3>
-                <p>Un símbolo emblemático de la civilización griega antigua, la Acrópolis es una colina rocosa que alberga algunos de los monumentos más famosos del mundo, incluyendo el Partenón, el Erecteion y el Templo de Atenea Niké.</p>
-                <img src="Acropolis.jpg"  width="150">
+                <figure>
+                    <img src="Acropolis.jpg" alt="Acropolis" />
+                    <figcaption>
+                        <p><b>Acrópolis de Atenas</b></p>
+                        <p>Un símbolo emblemático de la civilización griega antigua, la Acrópolis es una colina rocosa que alberga algunos de los monumentos más famosos del mundo, incluyendo el Partenón, el Erecteion y el Templo de Atenea Niké.</p>
+                    </figcaption>
+                </figure>
             </li>
-
             <li>
-                <h3><b>Olympia</b></h3>
-                <p>El lugar de nacimiento de los Juegos Olímpicos de la antigüedad, donde atletas de toda Grecia competían en honor a Zeus. Olympia cuenta con ruinas antiguas, incluyendo el Templo de Zeus y el Estadio Olímpico.</p>
-                <img src="Olimpia.jpg"  width="150">
+                <figure>
+                    <img src="Olimpia.jpg" alt="Olimpia" />
+                    <figcaption>
+                        <p><b>Olympia</b></p>
+                        <p>El lugar de nacimiento de los Juegos Olímpicos de la antigüedad, donde atletas de toda Grecia competían en honor a Zeus. Olympia cuenta con ruinas antiguas, incluyendo el Templo de Zeus y el Estadio Olímpico.</p>
+                    </figcaption>
+                </figure>
             </li>
-
             <li>
-                <h3><b>Santuario de Saint Seiya (¡de broma!)</b></h3>
-                <p>Un lugar legendario donde se dice que los Santos de bronce lucharon contra los 12 Santos dorados para salvar la vida de la diosa Atena encarnada Saori Kido. Se dice que está ubicado en una dimensión paralela, accesible solo para aquellos con el corazón valiente y la determinación de un verdadero Santo de Atena.</p>
-                <img src="12casas.jpg"  width="150">
+                <figure>
+                    <img src="12casas.jpg" alt="Santuario" />
+                    <figcaption>
+                        <p><b>Santuario de Saint Seiya (¡de broma!)</b></p>
+                        <p>Un lugar legendario donde se dice que los Santos de bronce lucharon contra los 12 Santos dorados para salvar la vida de la diosa Atena encarnada Saori Kido. Se dice que está ubicado en una dimensión paralela, accesible solo para aquellos con el corazón valiente y la determinación de un verdadero Santo de Atena.</p>
+                    </figcaption>
+                </figure>
             </li>
         </ul>
+    </div>
     </section>
 
     <section id="itinerario">
         <h2>Itinerario de 5 días y 4 noches en Grecia</h2>
-        <ul>
+        <div class="Card_it">
+        <ul id="itinerario-list">
             <li>
                 <h3><b>Día 1: Atenas</b></h3>
-                <p>- Llegada a Atenas y traslado al hotel.<br>
+                <p class="detalle">- Llegada a Atenas y traslado al hotel.<br>
                 - Visita a la Acrópolis de Atenas para explorar el Partenón y otros monumentos antiguos.<br>
                 - Recorrido por el barrio de Plaka para disfrutar de su encanto histórico y sus tiendas tradicionales.</p>
             </li>
 
             <li>
                 <h3><b>Día 2: Atenas, parte 2: ahora más Atenas que nunca</b></h3>
-                <p>- Visita al Museo de la Acrópolis para conocer más sobre la historia y la arquitectura de la antigua Grecia.<br>
+                <p class="detalle">- Visita al Museo de la Acrópolis para conocer más sobre la historia y la arquitectura de la antigua Grecia.<br>
                 - Paseo por el Mercado Central de Atenas para experimentar la vida cotidiana de la ciudad.<br>
                 - Tiempo libre para cenar en una taberna griega y probar platos locales.</p>
             </li>
 
             <li>
                 <h3><b>Día 3: Olympia</b></h3>
-                <p>- Salida hacia Olympia en autobús o coche de alquiler.<br>
+                <p class="detalle">- Salida hacia Olympia en autobús o coche de alquiler.<br>
                 - Exploración del Museo Arqueológico de Olympia para ver artefactos antiguos y estatuas de la antigüedad.<br>
                 - Alojamiento en un hotel en Olympia.</p>
             </li>
 
             <li>
                 <h3><b>Día 4: Santuario de Saint Seiya (broma) y Regreso a Atenas</b></h3>
-                <p>- ¡Recorrido por el "santuario de Saint Seiya" (broma)"!<br>
+                <p class="detalle">- ¡Recorrido por el "santuario de Saint Seiya" (broma)"!<br>
                 - Regreso a Atenas en autobús o coche de alquiler.<br>
                 - Tarde libre en Atenas para hacer compras o relajarse.</p>
             </li>
 
             <li>
                 <h3><b>Día 5: Partida</b></h3>
-                <p>- Traslado al aeropuerto para tomar el vuelo de regreso a casa.</p>
+                <p class="detalle">- Traslado al aeropuerto para tomar el vuelo de regreso a casa.</p>
             </li>
         </ul>
+    </div>
     </section>
 
     <section id="costos">
         <h2>Costos de Viaje en Grecia</h2>
-        <p>- <b>Traslados:</b> Los traslados pueden costar entre 20 a 50 dólares por trayecto, dependiendo del medio de transporte elegido.<br>
+        <p>
+        - <b>Traslados:</b> Los traslados pueden costar entre 20 a 50 dólares por trayecto, dependiendo del medio de transporte elegido.<br>
         - <b>Hospedaje:</b> Los precios oscilan entre 50 a 150 dólares por noche, según la ubicación y categoría del alojamiento.<br>
         - <b>Entradas a sitios turísticos:</b> Las entradas suelen estar entre 10 a 20 dólares por persona.<br>
         - <b>Alimentación:</b> Se estima un gasto de 15 a 30 dólares por comida, dependiendo del lugar y el tipo de restaurante.</p>
@@ -94,6 +113,10 @@
         </p>
     </footer>
 
-    <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+    <div class="button2">
+    <button class="button" onclick="window.location.href='index.html'"><span>Regresar al inicio</span></button>
+</div>
 </body>
+</main>
+
 </html>

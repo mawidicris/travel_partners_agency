@@ -3,74 +3,103 @@
 <head>
     <title>Egipto</title>
     <link rel="icon" href="avion.png" type="image/png">
+    <link rel="stylesheet" href="Styless2.css">
 </head>
 <body>
-    <header style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <header class="BE" style="background-color: #f2f2f2; padding: 20px; text-align: center;">
         <h1>Egipto</h1>
-        <img src="Egipto.jpg"  style="max-width: 100%; height: auto;">
+        
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sitios">Sitios de interés</a></li>
-            <li><a href="#itinerario">Itinerario</a></li>
-            <li><a href="#costos">Costos de viaje</a></li>
-        </ul>
-    </nav>
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sitios">Sitios de interés</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#costos">Costos de viaje</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <section id="inicio">
+    <section id="sitios">
+        <div class="Card">
         <h2>Sitios de interés</h2>
         <p>¡Descubre Egipto, una tierra de misterio y maravillas antiguas! Situado en el noreste de África y bordeado por el Mar Mediterráneo y el Mar Rojo, Egipto es famoso por su rica historia, cultura fascinante y monumentos icónicos que han resistido el paso del tiempo. Desde las majestuosas pirámides de Giza hasta los tesoros del antiguo Egipto en el Museo Egipcio de El Cairo, este país te sumerge en un viaje a través de los siglos de civilización y legado.</p>
 
         <ul>
             <li>
-                <h3><b>Las Pirámides de Giza:</b></h3>
+                <figure><img src="Piramide.jpg"  width="150">
+                    <figcaption>
+                <p><b>Las Pirámides de Giza:</b></p>
                 <p>Este complejo arqueológico es uno de los sitios más emblemáticos del mundo antiguo y alberga las famosas pirámides de Keops, Kefrén y Micerinos, así como la Gran Esfinge. Las pirámides son un testimonio impresionante de la grandeza y la ingeniería avanzada de la civilización egipcia.</p>
-                <img src="Piramide.jpg"  width="150">
+            </figcaption>
+                </figure>
             </li>
 
+
             <li>
-                <h3><b>El Museo Egipcio de Antigüedades:</b></h3>
+                <figure><img src="Museo.jpg"  width="150">
+                    <figcaption>
+                <p><b>El Museo Egipcio de Antigüedades:</b></p>
                 <p>Situado en El Cairo, este museo alberga una de las colecciones más impresionantes del mundo de artefactos y tesoros del antiguo Egipto. Desde los fascinantes hallazgos de la tumba de Tutankamón hasta estatuas colosales de faraones, el museo ofrece una visión única de la historia y la cultura egipcias.</p>
-                <img src="Museo.jpg"  width="150">
+            </figcaption>
+            </figure>
+                    
             </li>
 
             <li>
-                <h3><b>El Templo de Karnak y el Templo de Luxor:</b></h3>
+                <figure>  <img src="Templos.jpg"  width="150">
+                    <figcaption>
+                <p><b>El Templo de Karnak y el Templo de Luxor:</b></p>
                 <p>Ubicados en la ciudad de Luxor, estos templos son monumentos impresionantes dedicados a los dioses egipcios. El Templo de Karnak es uno de los complejos religiosos más grandes del mundo, con columnas gigantescas, obeliscos y estatuas, mientras que el Templo de Luxor es un majestuoso ejemplo de arquitectura egipcia con sus salas hipóstilas y avenidas de esfinges.</p>
-                <img src="Templos.jpg"  width="150">
+            </figcaption>
+            </figure>
             </li>
         </ul>
+    </div>
+
     </section>
 
     <section id="itinerario">
         <h2>Itinerario de 5 días y 4 noches en Egipto</h2>
-        <ul>
-            <li><h3><b>Día 1: Llegada a El Cairo</b></h3>
-                <p>- Llegada al Aeropuerto Internacional de El Cairo. <br>
+        <div class="Card_it">
+        <ul id="itinerario-list">
+            <li>
+                <h3><b>Día 1: Llegada a El Cairo</b></h3>
+                <p class="detalle">- Llegada al Aeropuerto Internacional de El Cairo. <br>
                    - Traslado al hotel y registro. <br>
-                   - Día libre para descansar del vuelo y explorar los alrededores cercanos al hotel.</p></li>
+                   - Día libre para descansar del vuelo y explorar los alrededores cercanos al hotel.</p>
+                </li>
 
-            <li><h3><b>Día 2: Tour por El Cairo</b></h3>
-                <p>- Visita a las Pirámides de Giza, incluyendo las Grandes Pirámides de Keops, Kefrén y Micerinos.<br>
+                <li>
+                <h3><b>Día 2: Tour por El Cairo</b></h3>
+                <p class="detalle">- Visita a las Pirámides de Giza, incluyendo las Grandes Pirámides de Keops, Kefrén y Micerinos.<br>
                    - Exploración de la Gran Esfinge y el Templo del Valle. <br>
-                   - Visita al Museo Egipcio de Antigüedades por la tarde.</p></li>
+                   - Visita al Museo Egipcio de Antigüedades por la tarde.</p>
+                </li>
 
-            <li><h3><b>Día 3: Excursión a Luxor</b></h3>
-                <p>- Visita al Templo de Karnak, explorando su vasto complejo de templos, columnatas y obeliscos.<br>
+            <li>
+                <h3><b>Día 3: Excursión a Luxor</b></h3>
+                <p class="detalle">- Visita al Templo de Karnak, explorando su vasto complejo de templos, columnatas y obeliscos.<br>
                    - Visita al Templo de Luxor por la tarde, admirando sus majestuosas columnas y estatuas. <br>
-                   - Regreso a El Cairo en avión por la tarde y noche en El Cairo.</p></li>
+                   - Regreso a El Cairo en avión por la tarde y noche en El Cairo.</p>
+                </li>
 
-            <li><h3><b>Día 4: Excursión a Memphis, Saqqara y Alejandría</b></h3>
-                <p>- Excursión de medio día a Memphis, la antigua capital de Egipto, y Saqqara, donde se encuentra la famosa Pirámide Escalonada de Djoser.<br>
+            <li>
+                <h3><b>Día 4: Excursión a Memphis, Saqqara y Alejandría</b></h3>
+                <p class="detalle">- Excursión de medio día a Memphis, la antigua capital de Egipto, y Saqqara, donde se encuentra la famosa Pirámide Escalonada de Djoser.<br>
                    - Visita a la Biblioteca de Alejandría y al Fuerte de Qaitbay.<br>
-                   - Almuerzo incluido durante la excursión.</p></li>
+                   - Almuerzo incluido durante la excursión.</p>
+                </li>
 
-            <li><h3><b>Día 5: Tiempo libre y partida</b></h3>
-                <p>- Desayuno en el hotel. <br>
+            <li>
+                <h3><b>Día 5: Tiempo libre y partida</b></h3>
+                <p class="detalle">- Desayuno en el hotel. <br>
                    - Mañana libre para compras de último momento o exploración adicional por cuenta propia.<br>
-                   - Check-out del hotel y traslado al aeropuerto para tu vuelo de regreso a casa o hacia tu próximo destino.</p></li>
+                   - Check-out del hotel y traslado al aeropuerto para tu vuelo de regreso a casa o hacia tu próximo destino.</p>
+                </li>
         </ul>
+    </div>
     </section>
 
     <section id="costos">
@@ -87,6 +116,8 @@
         </p>
     </footer>
 
-    <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+    <div class="button2">
+        <button class="button" onclick="window.location.href='index.html'"><span>Regresar al inicio</span></button>
+    </div>
 </body>
 </html>
